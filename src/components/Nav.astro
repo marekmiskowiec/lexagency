@@ -1,8 +1,17 @@
 <nav class="navigation">
   <div class="container">
     <ul>
-      <li><a href="#">about</a></li>
-      <li><a href="#">what we do</a></li>
+      <li>
+        <a href="#">about</a>
+      </li>
+      <li>
+        <a href="#">what we do</a>
+        <ul>
+          <li><a href="#">one</a></li>
+          <li><a href="#">two</a></li>
+          <li><a href="#">three</a></li>
+        </ul>
+      </li>
       <li><a href="#">projects</a></li>
       <li><a href="#">contact</a></li>
     </ul>
@@ -15,12 +24,20 @@
 
     & ul {
       list-style-type: none;
-    }
 
-    & li {
-      display: inline-block;
-      margin-right: 3.6rem;
-      position: relative;
+      & li {
+        display: inline-block;
+        margin-right: 3.6rem;
+        position: relative;
+      }
+
+      & ul {
+        display: none;
+
+        & li {
+          display: block;
+        }
+      }
     }
 
     & a {
@@ -31,5 +48,19 @@
     & a:hover {
       color: var(--color-two);
     }
+  }
+
+  .navigation li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: lightblue;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1.2rem;
+  }
+
+  .navigation li ul li a {
+    display: block;
+    padding: 0 24px;
   }
 </style>
