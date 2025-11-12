@@ -1,0 +1,35 @@
+<nav class="navigation">
+  <div class="container">
+    <ul>
+      <li><a href="#">about</a></li>
+      <li><a href="#">what we do</a></li>
+      <li><a href="#">projects</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navigation {
+    background-color: var(--color-one);
+
+    & ul {
+      list-style-type: none;
+    }
+
+    & li {
+      display: inline-block;
+      margin-right: 3.6rem;
+      position: relative;
+    }
+
+    & a {
+      text-decoration: none;
+      color: var(--color-light);
+    }
+
+    & a:hover {
+      color: var(--color-two);
+    }
+  }
+</style>
