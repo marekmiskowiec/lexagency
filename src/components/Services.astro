@@ -42,7 +42,6 @@
 <style>
   .services {
     display: flex;
-    justify-content: center;
   }
   .services__box-container {
     display: flex;
@@ -76,5 +75,11 @@
   .btn-four {
     color: var(--color-three);
     border: 1px solid var(--color-three);
+  }
+
+  @media (max-width: 1024px) {
+    .services__box-container {
+      display: block;
+    }
   }
 </style>

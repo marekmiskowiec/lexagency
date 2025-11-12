@@ -69,7 +69,6 @@
 <style>
   .work {
     display: flex;
-    justify-content: center;
   }
   .section__box-container {
     display: flex;
@@ -97,5 +96,11 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .section__box-container {
+      display: block;
+    }
   }
 </style>

@@ -1,0 +1,90 @@
+<section class="contact">
+  <h2 class="section-title">contact form</h2>
+  <div class="contact__container">
+    <div class="contact__form">
+      <form action="">
+        <input type="text" id="name" name="name" placeholder="Your name" />
+        <input type="email" id="email" name="email" placeholder="Your email" />
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type your message here"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="contact__info">
+      <h3>sales specialist</h3>
+      <p>Marek Kowalski</p>
+      <h3>address</h3>
+      <p>Kolorowa 123419841 adas</p>
+      <h3>phone</h3>
+      <p>666-555-444</p>
+    </div>
+  </div>
+</section>
+<style>
+  .contact {
+    background: var(--color-one);
+  }
+  .contact__container {
+    display: flex;
+  }
+
+  .contact__form {
+    flex: 2 0 0;
+    display: flex;
+    justify-content: start;
+  }
+
+  .contact__info {
+    flex: 1 0 0;
+    color: var(--color-light);
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* space between stacked fields */
+    min-width: 50%;
+  }
+
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .contact textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .contact input[type="submit"] {
+    align-self: flex-start;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    .contact {
+      background-color: green;
+    }
+
+    .contact__container {
+      flex-direction: column;
+    }
+
+    .contact__form {
+      display: block;
+    }
+
+    .contact__info {
+      display: block;
+    }
+  }
+</style>
