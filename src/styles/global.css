@@ -32,3 +32,17 @@ body {
 section {
   padding: 9.6rem 0;
 }
+
+.btn {
+  display: inline-block;
+  min-width: 16rem;
+  margin: 2.4rem auto 0 auto;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+}
